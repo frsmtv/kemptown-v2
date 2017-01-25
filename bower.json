@@ -1,0 +1,23 @@
+{
+  "name": "kemptown-v2",
+  "description": "This is a genarator for gulpfile and package.json",
+  "main": "",
+  "authors": [
+    "steelydylan"
+  ],
+  "license": "MIT License",
+  "keywords": [
+    "gulp"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animate.css": "^3.5.2"
+  }
+}

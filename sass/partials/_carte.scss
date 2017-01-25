@@ -1,0 +1,18 @@
+#carte {
+  .carteSpan1 {
+  }
+  .carteSpan2 {
+  }
+  #carteContent1,#carteContent2 {
+    display: flex;
+    justify-content: space-around;
+    vertical-align: top!important;
+    margin-bottom: 4%;
+    #carteContentColRight {
+      margin-top: 18px;
+    }
+  }
+  .carteContent {
+
+  }
+}
