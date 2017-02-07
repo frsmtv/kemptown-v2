@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Kemptown Foodtruck - Burgers et fish'n'chips à Lyon</title>
+
     <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="PreLoadMe-master/css/styles.css">
     <link rel="stylesheet" href="dist/css/bundle-sass.css">
 
     <!--**** FONTS ****-->
     <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
 
       <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
@@ -21,22 +22,27 @@
   </head>
   <body>
 
+  <!-- Preloader -->
+  <div id="preloader">
+      <div id="status">&nbsp;</div>
+  </div>
+
   <!--**** HEADER ****-->
   <header>
       
-      <img class="animated fadeIn" id="lyon" src="dist/img/kemptown-foodtruck-lyon.png">
+      <!--<img class="animated fadeIn" id="lyon" src="dist/img/kemptown-foodtruck-lyon.png">-->
       <img class="animated fadeInLeft" id="foodtruck" src="dist/img/truck.png">
       <img class="animated fadeIn" id="logo" src="dist/img/logo2.png">
       
     <!--**** MAIN NAV ****-->
-    <nav id="main-nav">
+    <nav id="main-nav" class="">
 
-      <ul>
-        <li><a href="#">home</a> </li>
-        <li><a href="#">la carte</a> </li>
-        <li><a href="#">où nous trouver</a> </li>
-        <li><a href="#">événements privés</a> </li>
-        <li><a href="#">à propos</a> </li>
+      <ul class="animated fadeInDown">
+        <li id="home-btn"><a href="#">home</a> </li>
+        <li id="carte-btn"><a href="#">la carte</a> </li>
+        <li id="trouver-btn"><a href="#">où nous trouver</a> </li>
+        <li id="prives-btn"><a href="#">événements privés</a> </li>
+        <li id="apropos-btn"><a href="#">à propos</a> </li>
       </ul>
 
     </nav>
@@ -46,164 +52,266 @@
   <!--**** MAIN CONTENT ****-->
   <main>
 
-      <!-- ****************** MAIN CONTENT **************** -->
-      <section id="intro" class="">
+    <section class="animated fadeInUp" id="intro" class="">
 
-          <p>
-              Nos fish'n'chips et burgers sont fabriqués à partir d'ingrédients frais, de saison et de qualité, que nous avons sélectionnés parmi les meilleurs producteurs lyonnais.<br>
-          </p>
+      <p>
+          Nos fish'n'chips et burgers sont fabriqués à partir d'ingrédients frais, de saison et de qualité, que nous avons sélectionnés parmi les meilleurs producteurs lyonnais.<br>
+      </p>
 
-          <p>
-              Nos buns et pains à hot dog sont façonnés par<br>
-              <i>"le Boulanger de la Croix Rousse by Victor"</i><br><br>
-              Notre viande est d'origine France, de race Limousine<br><br>
-              Le poisson peut être du lieu, cabillaud ou eglefin selon la pêche du jour<br><br>
-              Nos légumes et fruits sont achetés de saison
-          </p>
+      <p>
+          Nos buns et pains à hot dog sont façonnés par <i>"le Boulanger de la Croix Rousse by Victor"</i><br><br>
+          Notre viande est d'origine France, de race Limousine<br><br>
+          Le poisson peut être du lieu, cabillaud ou eglefin selon la pêche du jour<br><br>
+          Nos légumes et fruits sont achetés de saison
+      </p>
 
-      </section> <!-- End: intro -->
+      <ul>
+          <li><i class="fa fa-map-marker" aria-hidden="true"></i>
+          Local</li>
+          <li><i class="fa fa-home" aria-hidden="true"></i>
+          Fait maison</li>
+          <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+          En direct des producteurs</li>
+      </ul>
 
-      <!--******** LA CARTE ********-->
-            <section id="carte" class="">
+    </section> <!-- End: intro -->
 
-              <img style="width: 100%;" src="dist/img/burger.jpg" alt="Kemptown Foodtruck, burgers et fish'n'chips à Lyon">
-              <h3>Menu</h3>
-              <span class="carteSpan1">Fish'n'chips // Burgers</span><br>
-              <span class="carteSpan2">Produits frais, de saison et à l'accent British</span>
+    <!--******** LA CARTE ********-->
+    <section class="animated fadeInUp" id="carte" class="">
 
-              <!-- ************** LA CARTE BLOC 1  *********** -->
-              <div id="carteContent1" class="carteContent">
+      <img style="width: 100%;" src="dist/img/burger.jpg" alt="Kemptown Foodtruck, burgers et fish'n'chips à Lyon">
+      <h3>Menu</h3>
+      <span class="carteSpan1">Fish'n'chips // Burgers</span><br>
+      <span class="carteSpan2">Produits frais, de saison et à l'accent British</span>
 
-                <!-- ************** LA CARTE BLOC 1 LEFT COLUMN  *********** -->
-                <div class="carteContentColLeft">
-                  <div class="carteContentItem">
-                    <h4>Fish &amp; chips 9,5 €</h4>
-                    <p>
-                      Dos de lieu enrobé d'une pâte à beignet<br>
-                      croustillante, frites maison, petits poids et sauce<br>
-                      tartare maison
-                    </p>
-                  </div> <!-- CarteContentItem -->
+      <!-- ************** LA CARTE BLOC 1  *********** -->
+      <div id="carteContent1" class="carteContent">
 
-                  <div class="carteContentItem">
-                    <h4>Burgers 8€</h4>
-                    <h5>Kempt Street</h5>
-                    <p>
-                      Boeuf, cheddar, oignons confits, mâche et sauce<br>
-                      barbecue maison
-                    </p>
-                    <h5>Queens Road</h5>
-                    <p>
-                      Boeuf, double bacon, blue stilton, mâche et<br>
-                      moutarde au miel
-                    </p>
-                    <h5>Duke Street (Fish Burger)</h5>
-                    <p>
-                      Dos de lieu enrobé d'une pâte à beignet croustillante,<br>
-                      sauce tartare maison et mâche
-                    </p>
-                    <h5>North Lane (Veggie)</h5>
-                    <p>
-                      Halloumi de Chypre (fromage de chèvre et brebis),<br>
-                      tomates confites, caviar d'aubergine, mâche et ketchup
-                    </p>
-                    <h5>Frites maison 3€</h5>
-                  </div> <!-- CarteContentItem -->
-                </div> <!-- carteContentColLeft -->
-
-                <!-- ************** LA CARTE BLOC 1 RIGHT COLUMN  *********** -->
-                <div class="carteContentColRight">
-                  <div class="carteContentItem">
-                    <h4>Formules</h4>
-                    <p>
-                      Fish'n'chips + boisson<br>
-                      11€
-                    </p>
-                    <p>
-                      Burger + frites<br>
-                      9,50€ (Bière ou cidre +1 €)
-                    </p>
-                    <p>
-                      Burger + frites + boisson<br>
-                      11€ (Bière ou cidre +1 €)
-                    </p>
-                    <h4>Dessert</h4>
-                    <p>
-                      Patisserie maison 2,50€<br>
-                      Selon les envies du chef
-                    </p>
-                    <h4>Boissons</h4>
-                    <p>
-                      Eau 1,5 €<br>
-                      Soft 2 €<br>
-                      Bière / cidre 3 €<br>
-                      Café 1 €<br>
-                    </p>
-                  </div> <!-- carteContentItem -->
-                </div> <!-- carteContentColRight -->
-              </div> <!-- CarteContent BLOC 1 -->
-
-              <img style="height:600px" src="dist/img/fishnchips.jpg" alt="Kemptown Foodtruck, burgers et fish'n'chips à Lyon">
-              <h3>événements</h3>
-              <span class="carteSpan2">Sur demande, nous adaptons notre carte à vos envies</span>
-
-              <!-- ************** LA CARTE BLOC 2  *********** -->
-              <div id="carteContent2" class="carteContent">
-
-                <!-- ************** LA CARTE BLOC 2 LEFT COLUMN  *********** -->
-                <div class="carteContentColLeft">
-                  <div class="carteContentItem">
-                    <h4>Nos Hot Dogs</h4>
-                    <h5>Hot Hove Dog 5 €</h5>
-                    <p>
-                      Saucisse de Strasbourg (porc), ketchup, moutarde
-                    </p>
-                    <h5>Buxton Road 6,5€</h5>
-                    <p>
-                      Saucisse de Strasbourg (porc), cheddar,<br>
-                      oignons frits, cornichons, ketchup, moutarde
-                    </p>
-                    <h5>Stanley Road (veggie) 6,5€</h5>
-                    <p>
-                      Halloumi de Chypre*, tomates confites, caviar<br>
-                      d'aubergine, ketchup et mâche<br>
-                      (* fromages de chèvre et brebis)
-                    </p>
-                  </div> <!-- CarteContentItem -->
-                </div> <!-- carteContentColLeft -->
-
-                <!-- ************** LA CARTE BLOC 2 RIGHT COLUMN  *********** -->
-                <div class="carteContentColRight">
-                  <div class="carteContentItem">
-                    <h4>Formules</h4>
-                    <p>
-                      Hot Dog + Frites<br>
-                      + 1,50 €
-                    </p>
-                    <p>
-                      Hot Dog + Frites + Boisson<br>
-                      + 3 € (bière ou cidre +1 €)
-                    </p>
-                  </div> <!-- carteContentItem -->
-                </div> <!-- carteContentColRight -->
-            </div>
-            <h3>Mais aussi...</h3>
+        <!-- ************** LA CARTE BLOC 1 LEFT COLUMN  *********** -->
+        <div class="carteContentColLeft">
+          <div class="carteContentItem">
+            <h4>Fish &amp; chips 9,5 €</h4>
             <p>
-              Crêpes sucrées ou salées, bar à bonbons ou<br>
-              pop corn, glaces ...<br>
-              <br>
-                <i>Et si vous avez d'autres idées, contactez-nous !</i>
+              Dos de lieu enrobé d'une pâte à beignet<br>
+              croustillante, frites maison, petits poids et sauce<br>
+              tartare maison
             </p>
-          </section> <!-- End: la Carte -->
+          </div> <!-- CarteContentItem -->
+
+          <div class="carteContentItem">
+            <h4>Burgers 8€</h4>
+            <h5>Kempt Street</h5>
+            <p>
+              Boeuf, cheddar, oignons confits, mâche et sauce<br>
+              barbecue maison
+            </p>
+            <h5>Queens Road</h5>
+            <p>
+              Boeuf, double bacon, blue stilton, mâche et<br>
+              moutarde au miel
+            </p>
+            <h5>Duke Street (Fish Burger)</h5>
+            <p>
+              Dos de lieu enrobé d'une pâte à beignet croustillante,<br>
+              sauce tartare maison et mâche
+            </p>
+            <h5>North Lane (Veggie)</h5>
+            <p>
+              Halloumi de Chypre (fromage de chèvre et brebis),<br>
+              tomates confites, caviar d'aubergine, mâche et ketchup
+            </p>
+            <h5>Frites maison 3€</h5>
+          </div> <!-- CarteContentItem -->
+        </div> <!-- carteContentColLeft -->
+
+        <!-- ************** LA CARTE BLOC 1 RIGHT COLUMN  *********** -->
+        <div class="carteContentColRight">
+          <div class="carteContentItem">
+            <h4>Formules</h4>
+            <p>
+              Fish'n'chips + boisson<br>
+              11€
+            </p>
+            <p>
+              Burger + frites<br>
+              9,50€ (Bière ou cidre +1 €)
+            </p>
+            <p>
+              Burger + frites + boisson<br>
+              11€ (Bière ou cidre +1 €)
+            </p>
+            <h4>Dessert</h4>
+            <p>
+              Patisserie maison 2,50€<br>
+              Selon les envies du chef
+            </p>
+            <h4>Boissons</h4>
+            <p>
+              Eau 1,5 €<br>
+              Soft 2 €<br>
+              Bière / cidre 3 €<br>
+              Café 1 €<br>
+            </p>
+          </div> <!-- carteContentItem -->
+        </div> <!-- carteContentColRight -->
+      </div> <!-- CarteContent BLOC 1 -->
+
+      <img style="height:600px" src="dist/img/fishnchips.jpg" alt="Kemptown Foodtruck, burgers et fish'n'chips à Lyon">
+      <h3>événements</h3>
+      <span class="carteSpan2">Sur demande, nous adaptons notre carte à vos envies</span>
+
+      <!-- ************** LA CARTE BLOC 2  *********** -->
+      <div id="carteContent2" class="carteContent">
+
+        <!-- ************** LA CARTE BLOC 2 LEFT COLUMN  *********** -->
+        <div class="carteContentColLeft">
+          <div class="carteContentItem">
+            <h4>Nos Hot Dogs</h4>
+            <h5>Hot Hove Dog 5 €</h5>
+            <p>
+              Saucisse de Strasbourg (porc), ketchup, moutarde
+            </p>
+            <h5>Buxton Road 6,5€</h5>
+            <p>
+              Saucisse de Strasbourg (porc), cheddar,<br>
+              oignons frits, cornichons, ketchup, moutarde
+            </p>
+            <h5>Stanley Road (veggie) 6,5€</h5>
+            <p>
+              Halloumi de Chypre*, tomates confites, caviar<br>
+              d'aubergine, ketchup et mâche<br>
+              (* fromages de chèvre et brebis)
+            </p>
+          </div> <!-- CarteContentItem -->
+        </div> <!-- carteContentColLeft -->
+
+        <!-- ************** LA CARTE BLOC 2 RIGHT COLUMN  *********** -->
+        <div class="carteContentColRight">
+          <div class="carteContentItem">
+            <h4>Formules</h4>
+            <p>
+              Hot Dog + Frites<br>
+              + 1,50 €
+            </p>
+            <p>
+              Hot Dog + Frites + Boisson<br>
+              + 3 € (bière ou cidre +1 €)
+            </p>
+          </div> <!-- carteContentItem -->
+        </div> <!-- carteContentColRight -->
+    </div>
+    <h3>Mais aussi...</h3>
+    <p>
+      Crêpes sucrées ou salées, bar à bonbons ou<br>
+      pop corn, glaces ...<br>
+      <br>
+        <i>Et si vous avez d'autres idées, contactez-nous !</i>
+    </p>
+    </section> <!-- End: la Carte -->
+
+    <!--******** OU NOUS TROUVER ********      -->
+    <section class="animated fadeInUp" id="ou-nous-trouver">
+        <img style="width: 100%" src="dist/img/kemptown-foodtruck-ounoustrouver.jpg">
+        <h3>Lyon et ses alentours</h3>
+
+        <!--**** PLANNING SEMAINE ****-->
+        <h4>semaine du 6 au 11 février 2017</h4>
+
+        <p>
+            <b>LUNDI 6</b><br>
+            12H - 14H30 : PÔLE PIXEL 24 Rue Emile Decorps, 69100 VILLEURBANNE
+        </p>
+
+        <p>
+            <b>MERCREDI 8</b><br>
+            11H30 - 14H30 : HOPITAL LYON SUD, PIERRE BENITE<br>
+            17H - 21H30 : MATCH OL/NANCY AU PARC OL
+        </p>
+
+        <p>
+            <b>JEUDI 9</b><br>
+            11H30 - 14H30 : HOPITAL FEMME MERE ENFANT, BRON CROIX ROUSSE, 69004 LYON
+        </p>
+
+        <p>
+            <b>VENDREDI 10</b><br>
+            11H30 - 14H30 : HOPITAL E. HERRIOT, Place d'Arsonval 69003 LYON
+        </p>
+
+        <p>
+            <b>SAMEDI 11</b><br>
+            20H - 23H30 : "LYON BURLESQUE FESTIVAL" AU MARCHE GARE - 34 Rue Casimir Périer 69002 LYON
+        </p>
+
+        <p>
+        </p>
+
+        <p>
+        </p>
+
+        <p id="emplacement">Vous avez un emplacement à nous suggérer, ou vous travaillez dans une entreprise avec un parking privé ?<br>
+        Ecrivez-nous !</p>
+
+    </section> <!-- End: ou nous trouver -->
+      
+    <section class="animated fadeInUp" id="evenements-prives">
+        <img style="width: 100%" src="dist/img/kemptown-foodtruck-street-food-lyon.jpg">
+        <h3>mariage, anniversaire, brunch, soirée privée</h3>
+        <p>
+            Parce que toutes les occasions sont bonnes pour se réunir, marquez les esprits de vos invités en privatisant le kemptown foodtruck, et faites de votre événement un moment unique<br>
+            <br>
+            Contactez-nous, nous répondrons à toutes vos questions
+        </p>
+        
+    </section> <!-- End: evenements prives -->
+
+    <section class="animated fadeInUp" id="a-propos">
+        <h3>hello !</h3>
+
+        <p>
+            Nous sommes Clara et Christian, et c'est au retour d'une année passée en Angleterre, à Brighton, que nous avons voulu faire découvrir la cuisine anglaise aux français !<br>
+            Au volant de notre food truck, nous sillonnons les routes de la région lyonnaise pour vous propsoer des fish'n'chips et des burgers gourmands et généreux dont les recettes à l'accent british vous raviront.<br>
+            <br>
+            Nos fournisseurs sont soigneusement sélectionnés, nos produits seront toujours frais, locaux et de saison, nos frites et no sauces faites maison.<br>
+            <br>
+            Bonne nouvelle pour les becs sucrés, nous proposons des desserts faits maison inspirtés de nos meilleurs souvenirs : carrot cake, brownie, cake au citron... seront à la carte selon les envies du chef !
+        </p>
+
+        <p id="cta">
+            Vous avez des questions à nous poser ?<br>
+            N'hésitez pas !
+        </p>
+
+    </section> <!-- End: à propos -->
+
 
   </main>
 
-  <footer>
-
+  <footer class="animated fadeInUp">
+    <ul id="social">
+        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> </li>
+        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> </li>
+        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a> </li>
+        <li><a href="mailto:"><i class="fa fa-envelope" aria-hidden="true"></i>
+        </a> </li>
+    </ul>
   </footer>
 
 <script src="js/jquery.slim.min.js" charset="utf-8"></script>
-<script src="jquery-gradientify/jquery.gradientify.min.js"></script>
+<script src="js/jquery.transit.js"></script>
+<!--<script src="jquery-gradientify/jquery.gradientify.min.js"></script>-->
 <script src="js/main.js" charset="utf-8"></script>
-  </body>
+
+<!-- PRELOADER -->
+<script type="text/javascript">
+  //<![CDATA[
+  $(window).on('load', function() { // makes sure the whole site is loaded
+      $('#status').delay(1000).hide(); // will first fade out the loading animation
+      $('#preloader').delay(1000).hide(); // will fade out the white DIV that covers the website.
+      $('body').delay(1000).css({'overflow':'visible'});
+  })
+  //]]>
+</script>
+
+</body>
 </html>

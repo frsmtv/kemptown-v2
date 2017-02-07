@@ -1,0 +1,15 @@
+#a-propos {
+  display: none;
+  margin-bottom: 3%!important;
+  p {
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+  p#cta {
+    font-size: .9rem;
+    text-align: right;
+    font-weight: bold;
+  }
+}

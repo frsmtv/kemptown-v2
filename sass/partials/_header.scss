@@ -1,4 +1,7 @@
 header {
+  height: 435px;
+  background: url("../img/kemptown-foodtruck-lyon.png");
+  margin-bottom: 5%;
   img#lyon {
     width: 100%;
   }
@@ -16,8 +19,11 @@ header {
     margin: auto;
   }
   nav#main-nav {
-    margin-top: -6px;
     ul {
+      z-index: 10000;
+      position: fixed;
+      width: 90%;
+      //top: 440px;
       list-style: none;
       text-transform: uppercase;
       letter-spacing: 4px;

@@ -1,9 +1,11 @@
 @import "partials/mixins";
-@import "partials/typo";
 @import "partials/header";
 @import "partials/intro";
 @import "partials/footer";
 @import "partials/carte";
+@import "partials/ounoustrouver";
+@import "partials/evenementsprives";
+@import "partials/apropos";
 
 body {
   width: 90%;
@@ -15,6 +17,10 @@ body {
   line-height: 1.5;
   font-family: $mainFont;
   color: $mainColor;
+  background: #BE93C5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #BE93C5 , #7BC6CC); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #BE93C5 , #7BC6CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 ul {
@@ -34,6 +40,8 @@ a {
   
   &:hover {
     color: #79B0B0;
+    -webkit-box-shadow: 10px 10px 0 0 #000;
+    box-shadow: 10px 10px 0 0 #000;
   }
 }
 
@@ -60,4 +68,16 @@ h5 {
 
 main {
   margin-top: 4%;
-}
+  section {
+    margin-bottom: 5%;
+      img {
+        display: block;
+        margin: 0 auto;
+        border: 1px dashed #000;
+        padding: 1%;
+        -webkit-box-shadow: 10px 10px 0 0 #000;
+        box-shadow: 10px 10px 0 0 #000;
+
+      }
+    }
+  }
