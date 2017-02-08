@@ -41,7 +41,7 @@ $(document).ready(function(){
         $('#evenements-prives').hide();
         $('#a-propos').hide();
 
-        $('#foodtruck').transition({'margin-left': '30%'}, 750, 'easeInBack')
+        $('#foodtruck').transition({'margin-left': '40%'}, 750, 'easeInBack')
     });
 
     // ** PRIVES BUTTON **
@@ -52,7 +52,7 @@ $(document).ready(function(){
         $('#evenements-prives').show();
         $('#a-propos').hide();
 
-        $('#foodtruck').transition({'margin-left': '55%'}, 750, 'easeInBack')
+        $('#foodtruck').transition({'margin-left': '60%'}, 750, 'easeInBack')
     });
 
     // ** APROPOS BUTTON **
@@ -63,7 +63,7 @@ $(document).ready(function(){
         $('#evenements-prives').hide();
         $('#a-propos').show();
 
-        $('#foodtruck').transition({'margin-left': '71%'}, 750, 'easeInBack')
+        $('#foodtruck').transition({'margin-left': '80%'}, 750, 'easeInBack')
     });
 
 });
