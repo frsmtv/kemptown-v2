@@ -63,7 +63,7 @@ $(document).ready(function(){
         $('#evenements-prives').hide();
         $('#a-propos').show();
 
-        $('#foodtruck').transition({'margin-left': '70%'}, 750, 'easeInBack')
+        $('#foodtruck').transition({'margin-left': '71%'}, 750, 'easeInBack')
     });
 
 });
